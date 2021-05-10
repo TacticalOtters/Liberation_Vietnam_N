@@ -13,25 +13,25 @@
     Or not, just don't try!
 */
 FOB_typename = "Land_vn_hootch_02_03";                                  // This is the main FOB HQ building.
-FOB_box_typename = "B_Slingload_01_Cargo_F";                            // This is the FOB as a container. (Land_vn_cargo20_military_green_f could be usable when it is slingloadable.
-FOB_truck_typename = "vn_b_wheeled_m54_03";                             // This is the FOB as a vehicle.
-Arsenal_typename = "Land_vn_us_weapons_stack2";                         // This is the virtual arsenal as portable supply crates.
-Respawn_truck_typename = "vn_b_wheeled_m54_01_airport";                 // This is the mobile respawn (and medical) truck. (Not medical or optimal but at least less emersion breaking that HEMTT)
-huron_typename = "vn_b_air_ch34_01_01";                                 // This is Spartan 01, a multipurpose mobile respawn as a helicopter.
-crewman_classname = "vn_b_men_army_14";                                 // This defines the crew for vehicles.
-pilot_classname = "vn_b_men_aircrew_05";                                // This defines the pilot for helicopters.
-KP_liberation_little_bird_classname = "vn_b_air_oh6a_01";               // These are the little birds which spawn on the Freedom or at Chimera base.
-KP_liberation_boat_classname = "vn_c_boat_02_02";                       // These are the boats which spawn at the stern of the Freedom.
-KP_liberation_truck_classname = "vn_b_wheeled_m54_01";                  // These are the trucks which are used in the logistic convoy system.
+FOB_box_typename = "Land_vn_foodsacks_01_cargo_brown_f";                            // This is the FOB as a container. (Land_vn_cargo20_military_green_f could be usable when it is slingloadable.
+FOB_truck_typename = "vn_o_wheeled_z157_02";                             // This is the FOB as a vehicle.
+Arsenal_typename = "Land_vn_pavn_weapons_stack1";                         // This is the virtual arsenal as portable supply crates.
+Respawn_truck_typename = "vn_o_wheeled_z157_repair_nva65";                 // This is the mobile respawn (and medical) truck. (Not medical or optimal but at least less emersion breaking that HEMTT)
+huron_typename = "vn_o_air_mi2_01_02";                                 // This is Spartan 01, a multipurpose mobile respawn as a helicopter.
+crewman_classname = "vn_o_men_nva_65_35";                                 // This defines the crew for vehicles.
+pilot_classname = "vn_o_men_aircrew_01";                                // This defines the pilot for helicopters.
+KP_liberation_little_bird_classname = "vn_o_air_mi2_01_03";               // These are the little birds which spawn on the Freedom or at Chimera base.
+KP_liberation_boat_classname = "vn_c_boat_08_01";                       // These are the boats which spawn at the stern of the Freedom.
+KP_liberation_truck_classname = "vn_o_wheeled_z157_01";                  // These are the trucks which are used in the logistic convoy system.
 KP_liberation_small_storage_building = "ContainmentArea_02_sand_F";     // A small storage area for resources. (Land_vn_hootch_01_wall)
 KP_liberation_large_storage_building = "ContainmentArea_01_sand_F";     // A large storage area for resources. (Land_vn_barracks_04_wall)
 KP_liberation_recycle_building = "Land_vn_hootch_01_03";                // The building defined to unlock FOB recycling functionality.
 KP_liberation_air_vehicle_building = "Land_vn_tropo_reflector_01";      // The building defined to unlock FOB air vehicle functionality.
 KP_liberation_heli_slot_building = "Land_vn_b_helipad_01";              // The helipad used to increase the GLOBAL rotary-wing cap.
-KP_liberation_plane_slot_building = "Land_vn_usaf_hangar_02";           // The hangar used to increase the GLOBAL fixed-wing cap.
-KP_liberation_supply_crate = "Land_FoodSacks_01_cargo_brown_F";         // This defines the supply crates, as in resources.
-KP_liberation_ammo_crate = "vn_b_ammobox_supply_05";                    // This defines the ammunition crates.
-KP_liberation_fuel_crate = "CargoNet_01_barrels_F";                     // This defines the fuel crates.
+KP_liberation_plane_slot_building = "Land_vn_usaf_hangar_03";           // The hangar used to increase the GLOBAL fixed-wing cap.
+KP_liberation_supply_crate = "vn_o_ammobox_kit_nva";         // This defines the supply crates, as in resources.
+KP_liberation_ammo_crate = "Land_vn_pavn_weapons_stack2";                    // This defines the ammunition crates.
+KP_liberation_fuel_crate = "Land_vn_b_prop_fueldrum_03";                     // This defines the fuel crates.
 
 /*
     --- Friendly classnames ---
@@ -46,16 +46,33 @@ infantry_units = [
 ];
 
 light_vehicles = [
-    ["vn_c_bicycle_01",10,0,0],                                         // Bicycle
-    ["vn_b_boat_05_01",200,120,75]                                      // PTF Nasty (Mortar)
+    ["vn_o_bicycle_01",10,0,0],                                         // Bicycle
+    ["vn_o_boat_03_01",200,120,75],                                     // PTF Nasty (Mortar)
+    ["vn_o_wheeled_z157_01",100,75,75],                                 // Z-157 Transport
+    ["vn_o_wheeled_z157_repair",100,75,75],                             // Z-157 Repair
+    ["vn_o_wheeled_z157_fuel",100,75,75],                               // Z-157 Fuel
+    ["vn_o_wheeled_z157_ammo",100,75,75],                               // Z-157 Ammo
+    ["vn_o_wheeled_btr40_01",120,100,100],                              // Btr-40 Transport 
+    ["vn_o_wheeled_btr40_02",120,100,100]                              // Btr-40 Ambulance
 ];
 
 heavy_vehicles = [
-// M42A1 Duster ["vn_b_armor_m42",300,100,150] not playable
+    ["vn_o_armor_m41_01",350,200,300],                                  // M41A3 Walker Bulldog
+    ["vn_o_armor_type63_01",250,150,150]                                // Type 63 Tank
 ];
 
 air_vehicles = [
-    //["vn_b_air_uh1d_01_01",250,0,150],                                  // UH-1D Iroquois (Slick) not appearing in the list atm not sure if playable
+    ["vn_o_air_mi2_01_02",3000,2000,2000],                                 // Mi-2P Transport
+    ["vn_o_air_mi2_02_02",3000,2000,2000],                                 // Mi-2P Ambulance
+    ["vn_o_air_mi2_04_06",4000,3000,3000],                                 // Mi-2URN Viper (APERS)
+    ["vn_o_air_mi2_04_02",4000,3000,3000],                                 // Mi-2URN Viper (HE)
+    ["vn_o_air_mi2_04_04",4000,3000,3000],                                 // Mi-2URN Viper (HEAT)
+    ["vn_o_air_mi2_05_06",4500,3500,3500],                                 // Mi-2URP Salamander (AA)
+    ["vn_o_air_mi2_05_02",4500,3500,3500],                                 // Mi-2URP Salamander (AT)
+    ["vn_o_air_mi2_05_04",4500,3500,3500],                                 // Mi-2URP Salamander (MR)
+    ["vn_o_air_mi2_03_06",3500,2500,2500],                                 // Mi-2US Hostplite (FAC)
+    ["vn_o_air_mi2_03_02",3500,2500,2500],                                 // Mi-2US Hostplite (Fuel)
+    ["vn_o_air_mi2_03_04",3500,2500,2500]                                  // Mi-2US Hostplite (MG)
 ];
 
 static_vehicles = [
