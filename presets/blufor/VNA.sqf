@@ -279,9 +279,9 @@ support_vehicles = [
     ["vn_0_wheeled_z157_repair_vcmf",325,0,75],                               // Z-157 Repair
     ["vn_b_wheeled_z57_fuel_vcmf",125,0,275],                                // Z-157 Fuel
     ["vn_o_wheeled_z157_ammo_vcmf",125,200,75],                               // Z-157 Ammo
-    ["vn_o_air_mi2_01_01",275,0,0],                                // Mi-2 Repair
-    ["vn_o_air_mi2_01_01",275,0,0],                                 // Mi-2 Fuel
-    ["vn_o_air_mi2_01_01",275,0,0]                                  // Mi-2 Ammo
+    ["vn_o_wheeled_z157_repair",275,0,0],                                // Repair Box
+    ["Land_vn_b_prop_fueldrum_02",275,0,0],                                 // Repair Fuel
+    ["Land_vn_pavn_weapons_stack3",275,0,0]                                  // Ammo box 
 ];
 
 /*
