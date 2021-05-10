@@ -46,7 +46,7 @@ KPLIB_objectInits = [
                 waitUntil {sleep 0.1; time > 0};
                 [_fobBox] call KPLIB_fnc_setFobMass;
                 if ((typeOf _fobBox) isEqualTo FOB_box_typename) then {
-                    [_fobBox] call KPLIB_fnc_setFobMass;
+                    [_fobBox] call KPLIB_fnc_setFodbMass;
                     [_fobBox] remoteExecCall ["KPLIB_fnc_setLoadableViV", 0, _fobBox];
                 };
                 [_fobBox] remoteExecCall ["KPLIB_fnc_addActionsFob", 0, _fobBox];

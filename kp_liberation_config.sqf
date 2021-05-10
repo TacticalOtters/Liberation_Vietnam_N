@@ -64,6 +64,7 @@ KP_liberation_medical_facilities = [
     "uns_mash_main",
     "uns_mash",
     "US_Tent_2",
+    "Land_vn_hut_5"
     "US_Tent_MASH"
 ];
 
@@ -109,8 +110,9 @@ If you want to change a preset, it's recommended to set all four presets to 0 an
 27 = CUP Takistani Army
 28 = SFP (Woodland)
 29 = SFP (Desert)
-30 = LDF (Contact DLC) */
-KP_liberation_preset_blufor = 7;
+30 = LDF (Contact DLC) 
+31 = VN (SOG) */
+KP_liberation_preset_blufor = 31;
 
 /* OPFOR preset:
 0  = Custom (default vanilla CSAT)
