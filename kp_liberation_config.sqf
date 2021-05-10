@@ -189,9 +189,9 @@ KP_liberation_arsenal = 17;
 Time in minutes till a full tank depletes whilst the vehicle is standing still with a running engine. */
 KP_liberation_fuel_neutral = 180;
 // Time in minutes till a full tank depletes whilst the vehicle is driving below max speed.
-KP_liberation_fuel_normal = 90;
+KP_liberation_fuel_normal = 100;
 // Time in minutes till a full tank depletes whilst the vehicle is driving at max speed.
-KP_liberation_fuel_max = 45;
+KP_liberation_fuel_max = 60;
 
 /* - Gameplay constant settings.
 Name of the savegame namespace inside of the [ServerProfileName].vars.Arma3Profile file. */
@@ -199,33 +199,33 @@ GRLIB_save_key = "KP_LIBERATION_" + (toUpper worldName) + "_SAVEGAME";
 
 KP_liberation_save_interval = 60;                                       // Interval in seconds for automatic save.
 
-GRLIB_side_friendly = WEST;                                             // Friendly side.
-GRLIB_side_enemy = EAST;                                                // Enemy side.
-GRLIB_side_resistance = RESISTANCE;                                     // Resistance side.
+GRLIB_side_friendly = EAST;                                             // Friendly side.
+GRLIB_side_enemy = WEST;                                                // Enemy side.
+GRLIB_side_resistance = CIVILIAN;                                     // Resistance side.
 GRLIB_side_civilian = CIVILIAN;                                         // Civilian side.
 GRLIB_respawn_marker = "respawn";                                       // Respawn marker name.
 
-GRLIB_color_friendly = "ColorBLUFOR";                                   // Friendly sector marker color.
-GRLIB_color_enemy = "ColorOPFOR";                                       // Enemy sector marker color.
+GRLIB_color_friendly = "ColorOPFOR";                                   // Friendly sector marker color.
+GRLIB_color_enemy = "ColorBLUFOR";                                       // Enemy sector marker color.
 GRLIB_color_enemy_bright = "ColorRED";                                  // Enemy sector marker color (activated).
 
-GRLIB_fob_range = 200;                                                  // Build range around the main FOB building.
+GRLIB_fob_range = 500;                                                  // Build range around the main FOB building.
 GRLIB_halo_altitude = 2500;                                             // Altitude in metres for the HALO jump.
-GRLIB_secondary_missions_costs = [50, 15, 5];                           // Intel price for the secondary missions [FOB hunting, Convoy ambush, SAR].
+GRLIB_secondary_missions_costs = [50, 125, 5];                           // Intel price for the secondary missions [FOB hunting, Convoy ambush, SAR].
 GRLIB_secondary_objective_impact = 0.6;                                 // The percentage impact against enemy combat readiness for a successful FOB hunt.
-GRLIB_recycling_percentage = 0.5;                                       // Percentage of resources you get back from recycling.
-KP_liberation_production_interval = 60;                                 // Time in minutes until a production process is finished, when resources multiplier is set to 1.
+GRLIB_recycling_percentage = 0.7;                                       // Percentage of resources you get back from recycling.
+KP_liberation_production_interval = 180;                                 // Time in minutes until a production process is finished, when resources multiplier is set to 1.
 
 GRLIB_sector_size = 1000;                                               // Range to activate a sector.
 GRLIB_capture_size = 175;                                               // Range to capture a sector.
-GRLIB_defended_buildingpos_part = 0.4;                                  // Multiplier for defenders in buildings.
-GRLIB_battlegroup_size = 6;                                             // Size of enemy battlegroups.
-GRLIB_vulnerability_timer = 900;                                        // Time in seconds how long a captured sector is vulnerable to enemy troops.
-GRLIB_radiotower_size = 2500;                                           // Radio Tower scanning range.
-GRLIB_surrender_chance = 80;                                            // Chance that enemy infantry will surrender after heavy losses are encountered.
+GRLIB_defended_buildingpos_part = 0.5;                                  // Multiplier for defenders in buildings.
+GRLIB_battlegroup_size = 7;                                             // Size of enemy battlegroups.
+GRLIB_vulnerability_timer = 600;                                        // Time in seconds how long a captured sector is vulnerable to enemy troops.
+GRLIB_radiotower_size = 1500;                                           // Radio Tower scanning range.
+GRLIB_surrender_chance = 70;                                            // Chance that enemy infantry will surrender after heavy losses are encountered.
 
-GRLIB_civilians_amount = 10;                                            // Civilian count multiplier.
-GRLIB_cleanup_delay = 600;                                             // Time in seconds until bodies of dead soldiers are cleaned up.
+GRLIB_civilians_amount = 8;                                            // Civilian count multiplier.
+GRLIB_cleanup_delay = 500;                                             // Time in seconds until bodies of dead soldiers are cleaned up.
 
 GRLIB_blufor_cap = 100;                                                 // Cap for BLUFOR.
 GRLIB_sector_cap = 180;                                                 // Cap for sector defenders.
@@ -233,15 +233,15 @@ GRLIB_battlegroup_cap = 150;                                            // Cap f
 GRLIB_patrol_cap = 150;                                                 // Cap for enemy patrols.
 
 KP_liberation_cr_kill_penalty = 25;                                      // Civil Reputation penalty for killing a civilian.
-KP_liberation_cr_building_penalty = 25;                                  // Civil Reputation penalty for destroying/damaging a building.
-KP_liberation_cr_vehicle_penalty = 2;                                   // Civil Reputation penalty for stealing a civilian vehicle.
+KP_liberation_cr_building_penalty = 10;                                  // Civil Reputation penalty for destroying/damaging a building.
+KP_liberation_cr_vehicle_penalty = 15;                                   // Civil Reputation penalty for stealing a civilian vehicle.
 KP_liberation_cr_resistance_penalty = 3;                                // Civil Reputation penalty for killing a friendly resistance soldier.
 KP_liberation_cr_sector_gain = 10;                                       // Civil Reputation gain for liberate a sector.
 KP_liberation_cr_wounded_chance = 50;                                   // Chance (0-100) that there are wounded civilians right after capturing a sector.
 KP_liberation_cr_wounded_gain = 5;                                      // Civil Reputation gain for providing medical assistance for wounded civilians.
 
-KP_liberation_civinfo_min = 5400;                                       // Civil Informant minimum spawn time. (seconds)
-KP_liberation_civinfo_max = 10800;                                      // Civil Informant maximum spawn time. (seconds)
+KP_liberation_civinfo_min = 3000;                                       // Civil Informant minimum spawn time. (seconds)
+KP_liberation_civinfo_max = 3600;                                      // Civil Informant maximum spawn time. (seconds)
 KP_liberation_civinfo_chance = 75;                                      // Civil Informant spawn chance. (0-100)
 KP_liberation_civinfo_intel = 5;                                        // Civil Informant intel amount.
 KP_liberation_civinfo_duration = 1200;                                  // Civil Informant staytime until despawning. (seconds)
