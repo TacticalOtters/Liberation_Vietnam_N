@@ -148,8 +148,9 @@ KP_liberation_preset_opfor = 21;
 5  = Germany (Global Mobilization)
 6  = Unsung
 7  = CUP Takistani Locals
-8  = CUP National Party of Chernarus */
-KP_liberation_preset_resistance = 2;
+8  = CUP National Party of Chernarus 
+9  = vn*/
+KP_liberation_preset_resistance = 9;
 
 /* Civilians preset:
 0  = Custom (default vanilla)
@@ -159,8 +160,9 @@ KP_liberation_preset_resistance = 2;
 4  = Germany (Global Mobilization)
 5  = Unsung
 6  = CUP Takistani Civilians
-7  = CUP Chernarussian Civilians */
-KP_liberation_preset_civilians = 1;
+7  = CUP Chernarussian Civilians 
+8  = VN*/
+KP_liberation_preset_civilians = 8;
 
 /* Which arsenal preset should be used?
 0  = Use the default blacklist method (defined below)
@@ -179,8 +181,9 @@ KP_liberation_preset_civilians = 1;
 13 = CSAT Hex arsenal preset
 14 = CSAT Green Hex arsenal preset
 15 = AAF arsenal preset
-16 = LDF arsenal preset */
-KP_liberation_arsenal = 2;
+16 = LDF arsenal preset 
+17 = NVA*/
+KP_liberation_arsenal = 17;
 
 /* - Fuel consumption settings.
 Time in minutes till a full tank depletes whilst the vehicle is standing still with a running engine. */

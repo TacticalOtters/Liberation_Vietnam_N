@@ -90,13 +90,13 @@ opfor_vehicles_low_intensity = [
 opfor_battlegroup_vehicles = [
     "vn_b_wheeled_m151_mg_03",
 	"vn_b_wheeled_m54_mg_02",
-	"vn_b_wheeled_m54_mg_03",
+	"vn_b_wheeled_m54_mg_03"
 ];
 
 // All enemy vehicles that can spawn as battlegroups, either assaulting or as reinforcements, at lower enemy combat readiness (aggression levels).
 opfor_battlegroup_vehicles_low_intensity = [
     "vn_b_wheeled_m151_mg_02",
-	"vn_b_wheeled_m54_mg_01",
+	"vn_b_wheeled_m54_mg_01"
     //"vn_b_armor_type63",
     //"vn_o_wheeled_z157_mg_02" commented out now to make a difference between high and low
 ];
