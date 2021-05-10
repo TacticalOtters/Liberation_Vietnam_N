@@ -111,7 +111,7 @@ If you want to change a preset, it's recommended to set all four presets to 0 an
 28 = SFP (Woodland)
 29 = SFP (Desert)
 30 = LDF (Contact DLC) 
-31 = VN (SOG) */
+31 = VN (nva) */
 KP_liberation_preset_blufor = 31;
 
 /* OPFOR preset:
@@ -135,7 +135,8 @@ KP_liberation_preset_blufor = 31;
 17 = CUP Armed Forces of the Russian Federation (Modern MSV)
 18 = CUP Chernarus Defense Force
 19 = CUP British Armed Forces (Desert)
-20 = CUP British Armed Forces (Woodland) */
+20 = CUP British Armed Forces (Woodland) 
+21 = arvn+usa */
 KP_liberation_preset_opfor = 2;
 
 /* Resistance preset:
