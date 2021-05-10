@@ -40,7 +40,7 @@ briefingName = $STR_MISSION_TITLE;
 overviewPicture = "res\KarmaLoading.paa";
 
 // Text to be displayed below the overviewPicture on the mission selection screen
-overviewText = "karmakut.com";
+overviewText = "Tale From North Vietnam";
 
 
 /*
