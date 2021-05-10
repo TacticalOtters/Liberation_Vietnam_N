@@ -64,7 +64,7 @@ KP_liberation_medical_facilities = [
     "uns_mash_main",
     "uns_mash",
     "US_Tent_2",
-    "Land_vn_hut_5"
+    "Land_vn_hut_5",
     "US_Tent_MASH"
 ];
 
