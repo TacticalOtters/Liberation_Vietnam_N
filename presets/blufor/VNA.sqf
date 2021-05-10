@@ -76,7 +76,11 @@ air_vehicles = [
 ];
 
 static_vehicles = [
-
+    ["vn_o_wheeled_z157_mg_01",200,150,150],                               // Z-157 (DShKM)
+    ["vn_o_wheeled_btr40_mg_02",300,250,250],                              // BTR-40 (DShKM)
+    ["vn_o_wheeled_btr40_mg_01",250,225,225],                              // BTR-40 (RPD)
+    ["vn_o_wheeled_btr40_mg_03",750,650,650],                              // BTR-40 (ZPU-4)
+    ["vn_o_wheeled_wheeled_mg_02",700,600,600]                            // BTR-40 (ZPU-4)
 ];
 
 buildings = [
@@ -253,17 +257,9 @@ buildings = [
     ["PortableHelipadLight_01_red_F",0,0,0],
     ["vn_b_prop_fmradio_01",0,0,0],
     ["vn_bar_01_campchair_01",0,0,0],
-    ["vn_flag_101stab",0,0,0],
+    ["vn_flag_vc",0,0,0],
     ["vn_flag_1stcav",0,0,0],
-    ["vn_flag_25thid",0,0,0],
-    ["vn_flag_arvn",0,0,0],
-    ["vn_flag_aus",0,0,0],
-    ["vn_flag_nz",0,0,0],
-    ["vn_flag_sog",0,0,0],
-    ["vn_flag_usa",0,0,0],
-    ["vn_flag_usarmy",0,0,0],
-    ["vn_flag_usmc",0,0,0],
-    ["vn_roadbarrier_small_f",0,0,0],
+    ["vn_flag_pawn",0,0,0],
     ["vn_steeldrum_bbq_02",0,0,0],
     ["vn_steeldrum_half_02",0,0,0],
     ["vn_steeldrum_trash_02",0,0,0]
@@ -272,20 +268,20 @@ buildings = [
 support_vehicles = [
     [Arsenal_typename,100,200,0],
     [Respawn_truck_typename,200,0,100],
-    [FOB_box_typename,300,500,0],
-    [FOB_truck_typename,300,500,75],
+    [FOB_box_typename,250,500,0],
+    [FOB_truck_typename,250,500,75],
     [KP_liberation_small_storage_building,0,0,0],
     [KP_liberation_large_storage_building,0,0,0],
     [KP_liberation_recycle_building,250,0,0],
     [KP_liberation_air_vehicle_building,1000,0,0],
     [KP_liberation_heli_slot_building,250,0,0],
     [KP_liberation_plane_slot_building,500,0,0],
-    ["vn_b_wheeled_m54_repair",325,0,75],                               // M185 Repair
-    ["vn_b_wheeled_m54_fuel",125,0,275],                                // M49 Fuel
-    ["vn_b_wheeled_m54_ammo",125,200,75],                               // M54 Ammo
-    ["B_Slingload_01_Repair_F",275,0,0],                                // Huron Repair
-    ["B_Slingload_01_Fuel_F",75,0,200],                                 // Huron Fuel
-    ["B_Slingload_01_Ammo_F",75,200,0]                                  // Huron Ammo
+    ["vn_0_wheeled_z157_repair_vcmf",325,0,75],                               // Z-157 Repair
+    ["vn_b_wheeled_z57_fuel_vcmf",125,0,275],                                // Z-157 Fuel
+    ["vn_o_wheeled_z157_ammo_vcmf",125,200,75],                               // Z-157 Ammo
+    ["vn_o_air_mi2_01_01",275,0,0],                                // Mi-2 Repair
+    ["vn_o_air_mi2_01_01",275,0,0],                                 // Mi-2 Fuel
+    ["vn_o_air_mi2_01_01",275,0,0]                                  // Mi-2 Ammo
 ];
 
 /*
