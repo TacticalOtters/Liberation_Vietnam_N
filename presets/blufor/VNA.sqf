@@ -1,22 +1,8 @@
-/*
-    Needed Mods:
-    - VN
-
-    Optional Mods:
-    - None
-*/
-
-/*
-    --- Support classnames ---
-    Each of these should be unique.
-    The same classnames for different purposes may cause various unpredictable issues with player actions.
-    Or not, just don't try!
-*/
 FOB_typename = "Land_vn_hootch_02_03";                                  // This is the main FOB HQ building.
-FOB_box_typename = "Land_vn_foodsacks_01_cargo_brown_f";                            // This is the FOB as a container. (Land_vn_cargo20_military_green_f could be usable when it is slingloadable.
-FOB_truck_typename = "vn_o_wheeled_z157_02";                             // This is the FOB as a vehicle.
-Arsenal_typename = "Land_vn_pavn_weapons_stack1";                         // This is the virtual arsenal as portable supply crates.
-Respawn_truck_typename = "vn_o_wheeled_z157_repair_nva65";                 // This is the mobile respawn (and medical) truck. (Not medical or optimal but at least less emersion breaking that HEMTT)
+FOB_box_typename = "B_Slingload_01_Cargo_F";                            // This is the FOB as a container. (Land_vn_cargo20_military_green_f could be usable when it is slingloadable.
+FOB_truck_typename = "vn_o_wheeled_z157_03";                             // This is the FOB as a vehicle.
+Arsenal_typename = "Box_IED_Exp_F";                         // This is the virtual arsenal as portable supply crates.
+Respawn_truck_typename = "vn_o_wheeled_btr40_02";                 // This is the mobile respawn (and medical) truck. (Not medical or optimal but at least less emersion breaking that HEMTT)
 huron_typename = "vn_o_air_mi2_01_02";                                 // This is Spartan 01, a multipurpose mobile respawn as a helicopter.
 crewman_classname = "vn_o_men_nva_65_35";                                 // This defines the crew for vehicles.
 pilot_classname = "vn_o_men_aircrew_01";                                // This defines the pilot for helicopters.

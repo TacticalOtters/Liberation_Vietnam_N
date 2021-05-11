@@ -46,7 +46,7 @@ KPLIB_objectInits = [
                 waitUntil {sleep 0.1; time > 0};
                 [_fobBox] call KPLIB_fnc_setFobMass;
                 if ((typeOf _fobBox) isEqualTo FOB_box_typename) then {
-                    [_fobBox] call KPLIB_fnc_setFodbMass;
+                    [_fobBox] call KPLIB_fnc_setFobMass;
                     [_fobBox] remoteExecCall ["KPLIB_fnc_setLoadableViV", 0, _fobBox];
                 };
                 [_fobBox] remoteExecCall ["KPLIB_fnc_addActionsFob", 0, _fobBox];
@@ -140,28 +140,18 @@ KPLIB_objectInits = [
     // Custom Missile/Ammo createSimpleObject
 
     [
-        ["Box_IND_WpsLaunch_F"],
-        {[_this] execVM "scripts\ammoboxes\USAFmaaws.sqf";}
+        ["Box_Syndicate_WpsLaunch_F"],
+        {[_this] execVM "scripts\ammoboxes\VNrpg7.sqf";} //rpg7
     ],
 
     [
         ["Box_NATO_wpsLaunch_F"],
-        {[_this] execVM "scripts\ammoboxes\USAFstinger.sqf";}
+        {[_this] execVM "scripts\ammoboxes\VNaa.sqf";} //stella
     ],
 
     [
-        ["Box_EAF_WpsLaunch_F"],
-        {[_this] execVM "scripts\ammoboxes\USAFjavelin.sqf";}
-    ],
-
-    [
-        ["Box_NATO_Ammo_F"],
-        {[_this] execVM "scripts\ammoboxes\USAFammo.sqf";}
-    ],
-
-    [
-        ["Box_Syndicate_WpsLaunch_F"],
-        {[_this] execVM "scripts\ammoboxes\USAFm136.sqf";}
+        ["VirtualReammoBox_small_F"],
+        {[_this] execVM "scripts\ammoboxes\VNammo.sqf";} //ammo
     ]
 
 ];

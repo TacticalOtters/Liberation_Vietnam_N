@@ -183,7 +183,7 @@ KP_liberation_preset_civilians = 8;
 15 = AAF arsenal preset
 16 = LDF arsenal preset 
 17 = NVA*/
-KP_liberation_arsenal = 17;
+KP_liberation_arsenal = 2;
 
 /* - Fuel consumption settings.
 Time in minutes till a full tank depletes whilst the vehicle is standing still with a running engine. */

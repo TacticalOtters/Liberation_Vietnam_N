@@ -10,6 +10,10 @@
         - TFAR - https://steamcommunity.com/sharedfiles/filedetails/?id=894678801
 */
 
+params [
+	"_ammoBox"
+];
+
 GRLIB_arsenal_weapons = [
     //main
     "vn_dp28",
@@ -256,6 +260,23 @@ GRLIB_arsenal_items = [
     // Vanilla Standard Items
     //"vn_b_item_trapkit"
 
+    //stuff
+    "vn_o_poncho_01_01",
+    "vn_o_bandana_g",
+    "vn_o_acc_goggles_02",
+    "vn_g_spectacles_02",
+    "vn_o_scarf_01_01",
+    "vn_o_scarf_01_02",
+    "vn_o_scarf_01_03",
+    "vn_o_scarf_01_04",
+
+    //binocular
+    "vn_mk21_binocs",
+
+    //map
+    "vn_o_item_map",
+
+
     // ACE Items
     "ACE_adenosine",                                                // Adenosine autoinjector
     "ACE_Altimeter",                                                // Altimeter Watch
@@ -357,3 +378,5 @@ GRLIB_arsenal_backpacks = [
     "TFAR_mr6000l",
     "TFAR_mr3000_rhs"
 ];
+
+[_ammoBox, _whitelist, true] call ace_arsenal_fnc_initBox;

@@ -1,19 +1,3 @@
-/*
-    Needed Mods:
-    - CUP Weapons
-    - CUP Vehicles
-    - CUP Units
-
-    Optional Mods:
-    - None
-*/
-
-/*
-    --- Support classnames ---
-    Each of these should be unique.
-    The same classnames for different purposes may cause various unpredictable issues with player actions.
-    Or not, just don't try!
-*/
 FOB_typename = "Land_Cargo_HQ_V3_F";                                    // This is the main FOB HQ building.
 FOB_box_typename = "B_Slingload_01_Cargo_F";                            // This is the FOB as a container.
 FOB_truck_typename = "B_Truck_01_box_F";                                // This is the FOB as a vehicle.
