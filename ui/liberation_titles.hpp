@@ -54,7 +54,7 @@ class RscTitles {
             x = 0.325 * safezoneW + safezoneX;
             w = 0.35 * safezoneW;
             y = 0.2 * safezoneH + safezoneY;
-            h = 0.6 * safezoneH;
+            h = 0.8 * safezoneH;
             text = "res\splash_libe2.paa";
         };
         class VersionLabel {
