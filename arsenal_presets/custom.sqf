@@ -45,7 +45,6 @@ private _whitelist = [
 
     //launcher
     "vn_m127",
-    "vn_rpg2",
 
     "vn_40mm_m381_he_mag",
     "vn_40mm_m397_ab_mag",
@@ -129,7 +128,6 @@ private _whitelist = [
     "vn_sten_t_mag",
     "vn_v40_grenade_mag",
     "vn_welrod_mag",
-    "vn_rpg2_mag",
     "vn_sks_mag",
     "vn_sks_t_mag",
     "vn_m4956_10_t_mag",
