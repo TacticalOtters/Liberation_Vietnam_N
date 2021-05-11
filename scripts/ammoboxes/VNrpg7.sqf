@@ -4,6 +4,8 @@ clearItemCargoGlobal _crate;
 clearBackpackCargoGlobal _crate;  
 clearWeaponCargoGlobal _crate;  
 
-_crate addMagazineCargoGlobal ["MRAWS_HEAT_F", 5];
-_crate addWeaponCargoGlobal ["launch_MRAWS_green_F", 1];
+_crate addMagazineCargoGlobal ["vn_rpg7_rocket_ammo", 2];
+crate addMagazineCargoGlobal ["vn_rpg2_mag", 3];
+_crate addWeaponCargoGlobal ["vn_rpg7", 1];
+_crate addWeaponCargoGlobal ["vn_rpg2", 1];
 _crate allowDamage false;

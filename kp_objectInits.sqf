@@ -1,28 +1,3 @@
-/*
-    Specific object init codes depending on classnames.
-
-    Format:
-    [
-        Array of classnames as strings <ARRAY>,
-        Code to apply <CODE>,
-        Allow inheritance <BOOL> (default false)
-    ]
-    _this is the reference to the object with the classname
-
-    Example:
-        KPLIB_objectInits = [
-            [
-                ["O_soldierU_F"],
-                {systemChat "CSAT urban soldier was spawned!"}
-            ],
-            [
-                ["CAManBase"],
-                {systemChat format ["Some human named '%1' was spawned!", name _this]},
-                true
-            ]
-        ];
-*/
-
 KPLIB_objectInits = [
     // Set KP logo on white flag
     [
@@ -147,11 +122,5 @@ KPLIB_objectInits = [
     [
         ["Box_NATO_wpsLaunch_F"],
         {[_this] execVM "scripts\ammoboxes\VNaa.sqf";} //stella
-    ],
-
-    [
-        ["VirtualReammoBox_small_F"],
-        {[_this] execVM "scripts\ammoboxes\VNammo.sqf";} //ammo
     ]
-
 ];

@@ -8,6 +8,7 @@ KP_liberation_medical_vehicles = [
     "B_T_Truck_01_medical_F",
     "B_Truck_01_medical_F",
     "C_Van_02_medevac_F",
+    "vn_o_wheeled_btr40_02",  
     "CUP_B_BMP2_AMB_CDF",
     "CUP_B_BMP2_AMB_CZ_Des",
     "CUP_B_BMP2_AMB_CZ",
@@ -60,6 +61,7 @@ KP_liberation_medical_facilities = [
     "Land_Medevac_HQ_V1_F",
     "Land_MedicalTent_01_white_generic_outer_F", // make this entry match the Field Hospital classname specified by `karma_deployableFieldHospitals_shared_fieldHospitalClassname`
     "LAND_uns_army_med",
+    "Land_vn_tent_02_01",//same but for vn
     "LAND_uns_tent3mash",
     "uns_mash_main",
     "uns_mash",
@@ -183,7 +185,7 @@ KP_liberation_preset_civilians = 8;
 15 = AAF arsenal preset
 16 = LDF arsenal preset 
 17 = NVA*/
-KP_liberation_arsenal = 2;
+KP_liberation_arsenal = 17;
 
 /* - Fuel consumption settings.
 Time in minutes till a full tank depletes whilst the vehicle is standing still with a running engine. */
@@ -207,7 +209,7 @@ GRLIB_respawn_marker = "respawn";                                       // Respa
 
 GRLIB_color_friendly = "ColorOPFOR";                                   // Friendly sector marker color.
 GRLIB_color_enemy = "ColorBLUFOR";                                       // Enemy sector marker color.
-GRLIB_color_enemy_bright = "ColorRED";                                  // Enemy sector marker color (activated).
+GRLIB_color_enemy_bright = "ColorBLUE";                                  // Enemy sector marker color (activated).
 
 GRLIB_fob_range = 500;                                                  // Build range around the main FOB building.
 GRLIB_halo_altitude = 2500;                                             // Altitude in metres for the HALO jump.
@@ -267,180 +269,26 @@ KP_liberation_battlegroup_clearance = [
 The Steam UIDs entered in this array will allow corresponding players to access the commander actions (rights, production, etc.),
 even if they are not in the commander slot. */
 KP_liberation_commander_actions = [
-    "76561198009578451",
-    "76561198029603889",
-    "76561198128972595",
-    "76561198035901368",
-    "76561198010961319",
-    "76561198243945960",
-    "76561197966129199",
-    "76561198066834077",
-    "76561198372265841"
+    "76561198066834077"
 ];
 
 /* Whitelist for BI support framework access.
 Same format as for the commander actions. */
 KP_liberation_suppMod_whitelist = [
-    "76561198009578451",
     "76561198066834077"
 ];
 
 /* Array of radio tower classnames to place at radio tower sectors.
 If more than one is added, it'll be selected random for each sector on campaign start. */
 KPLIB_radioTowerClassnames = [
-    "Land_Communication_F"
+    "Land_vn_communication_f"
 ];
 
 /* - Default arsenal blacklist method.
 Useless if you're using anything other than "kp_liberation_arsenal = 0;" above. A whitelisted arsenal is always more performance friendly then a blacklisted arsenal.
 REMEMBER: All static turret and UAV bags should be defined here, to stop players from exploiting free resources via the virtual arsenal.    */
 blacklisted_from_arsenal = [
-    "rhs_mag_100Rnd_556x45_M855_cmag",
-    "rhs_mag_100Rnd_556x45_M855_cmag_mixed",
-    "rhs_mag_100Rnd_556x45_M855A1_cmag",
-    "rhs_mag_100Rnd_556x45_M855A1_cmag_mixed",
-    "rhs_mag_100Rnd_556x45_Mk262_cmag",
-    "rhs_mag_100Rnd_556x45_Mk318_cmag",
-    "B_AA_01_weapon_F",
-    "B_AT_01_weapon_F",
-    "B_GMG_01_A_weapon_F",
-    "B_GMG_01_high_weapon_F",
-    "B_GMG_01_weapon_F",
-    "B_HMG_01_A_weapon_F",
-    "B_HMG_01_high_weapon_F",
-    "B_HMG_01_support_F",
-    "B_HMG_01_support_high_F",
-    "B_HMG_01_weapon_F",
-    "B_Mortar_01_support_F",
-    "B_Mortar_01_weapon_F",
-    "B_Respawn_Sleeping_bag_blue_F",
-    "B_Respawn_Sleeping_bag_brown_F",
-    "B_Respawn_Sleeping_bag_F",
-    "B_Respawn_TentA_F",
-    "B_Respawn_TentDome_F",
-    "B_UAV_01_backpack_F",
-    "B_UAV_06_backpack_F",
-    "B_UAV_06_medical_backpack_F",
-    "B_UGV_02_Demining_backpack_F",
-    "B_UGV_02_Science_backpack_F",
-    "C_IDAP_UAV_01_backpack_F",
-    "C_IDAP_UAV_06_antimine_backpack_F",
-    "C_IDAP_UAV_06_backpack_F",
-    "C_IDAP_UAV_06_medical_backpack_F",
-    "C_IDAP_UGV_02_Demining_backpack_F",
-    "C_UAV_06_backpack_F",
-    "C_UAV_06_medical_backpack_F",
-    "I_AA_01_weapon_F",
-    "I_AT_01_weapon_F",
-    "I_C_HMG_02_high_weapon_F",
-    "I_C_HMG_02_support_F",
-    "I_C_HMG_02_support_high_F",
-    "I_C_HMG_02_weapon_F",
-    "I_E_AA_01_weapon_F",
-    "I_E_AT_01_weapon_F",
-    "I_E_GMG_01_A_Weapon_F",
-    "I_E_GMG_01_high_Weapon_F",
-    "I_E_GMG_01_Weapon_F",
-    "I_E_HMG_01_A_Weapon_F",
-    "I_E_HMG_01_high_Weapon_F",
-    "I_E_HMG_01_support_F",
-    "I_E_HMG_01_support_high_F",
-    "I_E_HMG_01_Weapon_F",
-    "I_E_HMG_02_high_weapon_F",
-    "I_E_HMG_02_support_F",
-    "I_E_HMG_02_support_high_F",
-    "I_E_HMG_02_weapon_F",
-    "I_E_Mortar_01_support_F",
-    "I_E_Mortar_01_Weapon_F",
-    "I_E_UAV_01_backpack_F",
-    "I_E_UAV_06_backpack_F",
-    "I_E_UAV_06_medical_backpack_F",
-    "I_E_UGV_02_Demining_backpack_F",
-    "I_E_UGV_02_Science_backpack_F",
-    "I_G_HMG_02_high_weapon_F",
-    "I_G_HMG_02_support_F",
-    "I_G_HMG_02_support_high_F",
-    "I_G_HMG_02_weapon_F",
-    "I_GMG_01_A_weapon_F",
-    "I_GMG_01_high_weapon_F",
-    "I_GMG_01_weapon_F",
-    "I_HMG_01_A_weapon_F",
-    "I_HMG_01_high_weapon_F",
-    "I_HMG_01_support_F",
-    "I_HMG_01_support_high_F",
-    "I_HMG_01_weapon_F",
-    "I_HMG_02_high_weapon_F",
-    "I_HMG_02_support_F",
-    "I_HMG_02_support_high_F",
-    "I_HMG_02_weapon_F",
-    "I_Mortar_01_support_F",
-    "I_Mortar_01_weapon_F",
-    "I_UAV_01_backpack_F",
-    "I_UAV_06_backpack_F",
-    "I_UAV_06_medical_backpack_F",
-    "I_UGV_02_Demining_backpack_F",
-    "I_UGV_02_Science_backpack_F",
-    "O_AA_01_weapon_F",
-    "O_AT_01_weapon_F",
-    "O_GMG_01_A_weapon_F",
-    "O_GMG_01_high_weapon_F",
-    "O_GMG_01_weapon_F",
-    "O_HMG_01_A_weapon_F",
-    "O_HMG_01_high_weapon_F",
-    "O_HMG_01_support_F",
-    "O_HMG_01_support_high_F",
-    "O_HMG_01_weapon_F",
-    "O_Mortar_01_support_F",
-    "O_Mortar_01_weapon_F",
-    "O_UAV_01_backpack_F",
-    "O_UAV_06_backpack_F",
-    "O_UAV_06_medical_backpack_F",
-    "O_UGV_02_Demining_backpack_F",
-    "O_UGV_02_Science_backpack_F",
-    "RHS_AGS30_Gun_Bag",
-    "RHS_AGS30_Tripod_Bag",
-    "RHS_DShkM_Gun_Bag",
-    "RHS_DShkM_TripodHigh_Bag",
-    "RHS_DShkM_TripodLow_Bag",
-    "RHS_Kord_Gun_Bag",
-    "RHS_Kord_Tripod_Bag",
-    "RHS_Kornet_Gun_Bag",
-    "RHS_Kornet_Tripod_Bag",
-    "RHS_M2_Gun_Bag",
-    "RHS_M2_MiniTripod_Bag",
-    "RHS_M2_Tripod_Bag",
-    "rhs_M252_Bipod_Bag",
-    "rhs_M252_Gun_Bag",
-    "RHS_Metis_Gun_Bag",
-    "RHS_Metis_Tripod_Bag",
-    "RHS_Mk19_Gun_Bag",
-    "RHS_Mk19_Tripod_Bag",
-    "RHS_NSV_Gun_Bag",
-    "RHS_NSV_Tripod_Bag",
-    "RHS_Podnos_Bipod_Bag",
-    "RHS_Podnos_Gun_Bag",
-    "RHS_SPG9_Gun_Bag",
-    "RHS_SPG9_Tripod_Bag",
-    "rhs_Tow_Gun_Bag",
-    "rhs_TOW_Tripod_Bag",
-    "UK3CB_BAF_L111A1",
-    "UK3CB_BAF_L134A1",
-    "UK3CB_BAF_L16_Tripod",
-    "UK3CB_BAF_L16",
-    "UK3CB_BAF_M6",
-    "UK3CB_BAF_Tripod",
-    "uns_M1_81mm_mortar_US_Bag",
-    "uns_M1919_low_US_Bag",
-    "uns_M2_60mm_mortar_US_Bag",
-    "uns_m2_high_US_Bag",
-    "uns_M2_low_US_Bag",
-    "uns_M30_107mm_mortar_US_Bag",
-    "uns_M60_high_US_Bag",
-    "uns_M60_low_US_Bag",
-    "uns_MK18_low_US_Bag",
-    "uns_STABO_US_Bag",
-    "uns_Tripod_Bag",
-    "Uns_US_searchlight_Bag"
+
 ];
 
 // Items which should be added as allowed Items, when they get blacklisted, even if they are not in the blacklisted_from_arsenal array
@@ -812,12 +660,16 @@ vehicle_repair_sources = [
     "UNS_Hanger_repair",
     "uns_M113_ENG",
     "uns_M35A2_repair",
+    "vn_0_wheeled_z157_repair_vcmf",
+    "vn_o_wheeled_z157_repair",
     "uns_motorpool1_repair"
 ];
 
 vehicle_rearm_sources = [
     "B_APC_Tracked_01_CRV_F",
     "B_Slingload_01_Ammo_F",
+    "vn_o_wheeled_z157_ammo_vcmf",
+    "Land_vn_pavn_weapons_stack3",
     "B_T_APC_Tracked_01_CRV_F",
     "B_T_Truck_01_ammo_F",
     "B_Truck_01_ammo_F",
@@ -873,6 +725,8 @@ vehicle_refuel_sources = [
     "CUP_O_Kamaz_Refuel_RU",
     "CUP_O_Ural_Refuel_CHDKZ",
     "CUP_O_Ural_Refuel_SLA",
+    "Land_vn_b_prop_fueldrum_02",
+    "vn_b_wheeled_z57_fuel_vcmf",
     "CUP_O_Ural_Refuel_TKA",
     "CUP_O_V3S_Refuel_TKA",
     "gm_gc_army_ural375d_refuel_win",
@@ -924,12 +778,17 @@ boats_names = [
     "uns_PBR_M10",
     "uns_pbr_mk18",
     "uns_pbr",
+    "vn_o_boat_03_02",
+    "vn_o_boat_01_04",
     "UNS_Zodiac_W"
 ];
 
 // Classnames of artillery vehicles, which should be added to the support module
 // (Needed/Favorized as BIS_SUPP_eligible_Artillery from the support module isn't broadcasted over the network and may hold unwanted vehicles)
 KP_liberation_suppMod_artyVeh = [
+    "vn_o_nva_static_d44_01",
+    "vn_o_nva_static_motar_type53",
+    "vn_o_nva_static_motar_type63",
     "B_G_Mortar_01_F",
     "B_MBT_01_arty_F",
     "B_MBT_01_mlrs_F",

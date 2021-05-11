@@ -1,5 +1,5 @@
 // Field hospital metadata:
-karma_deployableFieldHospitals_shared_fieldHospitalClassname = "Land_MedicalTent_01_white_generic_outer_F"; // make sure to keep this in-sync with the associated entry in `KP_liberation_medical_facilities`.
+karma_deployableFieldHospitals_shared_fieldHospitalClassname = "Land_vn_tent_02_01"; // make sure to keep this in-sync with the associated entry in `KP_liberation_medical_facilities`.
 
 // Statuses and messaging:
 karma_deployableFieldHospitals_shared_statusCodes_fieldHospitalDeployed = 0;

@@ -66,6 +66,6 @@ if (isServer) then {
     publicVariable "KPLIB_initServer";
 };
 
-// ZBE Caching, ask Zudren
+// ZBE Caching
 
 if (isServer) then {[1000,20,true,1500,3000,1000]execvm "zbe_cache\main.sqf"};

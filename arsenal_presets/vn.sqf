@@ -10,10 +10,6 @@
         - TFAR - https://steamcommunity.com/sharedfiles/filedetails/?id=894678801
 */
 
-params [
-	"_ammoBox"
-];
-
 GRLIB_arsenal_weapons = [
     //main
     "vn_dp28",
@@ -56,8 +52,7 @@ GRLIB_arsenal_weapons = [
     "ACE_VMM3",                                                     // VMM3
 
     //launcher
-    "vn_m127",
-    "vn_rpg2"
+    "vn_m127"
 ];
 
 GRLIB_arsenal_magazines = [
@@ -143,7 +138,6 @@ GRLIB_arsenal_magazines = [
     "vn_sten_t_mag",
     "vn_v40_grenade_mag",
     "vn_welrod_mag",
-    "vn_rpg2_mag",
     "vn_sks_mag",
     "vn_sks_t_mag",
     "vn_m4956_10_t_mag",
@@ -379,4 +373,3 @@ GRLIB_arsenal_backpacks = [
     "TFAR_mr3000_rhs"
 ];
 
-[_ammoBox, _whitelist, true] call ace_arsenal_fnc_initBox;
