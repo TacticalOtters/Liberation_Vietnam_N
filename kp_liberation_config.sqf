@@ -189,11 +189,11 @@ KP_liberation_arsenal = 17;
 
 /* - Fuel consumption settings.
 Time in minutes till a full tank depletes whilst the vehicle is standing still with a running engine. */
-KP_liberation_fuel_neutral = 180;
+KP_liberation_fuel_neutral = 120;
 // Time in minutes till a full tank depletes whilst the vehicle is driving below max speed.
-KP_liberation_fuel_normal = 100;
+KP_liberation_fuel_normal = 90;
 // Time in minutes till a full tank depletes whilst the vehicle is driving at max speed.
-KP_liberation_fuel_max = 60;
+KP_liberation_fuel_max = 50;
 
 /* - Gameplay constant settings.
 Name of the savegame namespace inside of the [ServerProfileName].vars.Arma3Profile file. */
@@ -203,7 +203,7 @@ KP_liberation_save_interval = 60;                                       // Inter
 
 GRLIB_side_friendly = EAST;                                             // Friendly side.
 GRLIB_side_enemy = WEST;                                                // Enemy side.
-GRLIB_side_resistance = CIVILIAN;                                     // Resistance side.
+GRLIB_side_resistance = RESISTANCE;                                     // Resistance side.
 GRLIB_side_civilian = CIVILIAN;                                         // Civilian side.
 GRLIB_respawn_marker = "respawn";                                       // Respawn marker name.
 

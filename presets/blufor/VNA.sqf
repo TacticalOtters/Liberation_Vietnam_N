@@ -254,20 +254,28 @@ buildings = [
 support_vehicles = [
     [Arsenal_typename,100,200,0],
     [Respawn_truck_typename,200,0,100],
-    [FOB_box_typename,250,500,0],
-    [FOB_truck_typename,250,500,75],
+    [FOB_box_typename,9999,9999,9999],
+    [FOB_truck_typename,2500,500,750],
     [KP_liberation_small_storage_building,0,0,0],
     [KP_liberation_large_storage_building,0,0,0],
     [KP_liberation_recycle_building,250,0,0],
     [KP_liberation_air_vehicle_building,1000,0,0],
     [KP_liberation_heli_slot_building,250,0,0],
     [KP_liberation_plane_slot_building,500,0,0],
+    ["ACE_medicalSupplyCrate_advanced",50,0,0],
+    ["ACE_Box_82mm_Mo_HE",50,40,0],
+    ["ACE_Box_82mm_Mo_Smoke",50,10,0],
+    ["ACE_Box_82mm_Mo_Illum",50,10,0],
+    ["ACE_Wheel",10,0,0],
+    ["ACE_Track",10,0,0],
+    ["Box_Syndicate_WpsLaunch_F",50,200,10],                                   //rpg 
+    ["Box_NATO_wpsLaunch_F",50,200,10],                                         //AA
     ["vn_0_wheeled_z157_repair_vcmf",325,0,75],                               // Z-157 Repair
-    ["vn_b_wheeled_z57_fuel_vcmf",125,0,275],                                // Z-157 Fuel
-    ["vn_o_wheeled_z157_ammo_vcmf",125,200,75],                               // Z-157 Ammo
-    ["vn_o_wheeled_z157_repair",275,0,0],                                // Repair Box
-    ["Land_vn_b_prop_fueldrum_02",275,0,0],                                 // Repair Fuel
-    ["Land_vn_pavn_weapons_stack3",275,0,0]                                  // Ammo box 
+    ["vn_b_wheeled_z57_fuel_vcmf",300,0,1600],                                // Z-157 Fuel
+    ["vn_o_wheeled_z157_ammo_vcmf",125,1000,75],                               // Z-157 Ammo
+    ["vn_o_wheeled_z157_repair",275,0,100],                                // Repair Box
+    ["Land_vn_b_prop_fueldrum_02",200,0,1000],                                 // Repair Fuel
+    ["Land_vn_pavn_weapons_stack3",275,1000,0]                                  // Ammo box 
 ];
 
 /*
