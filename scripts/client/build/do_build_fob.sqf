@@ -4,8 +4,8 @@ if ( count GRLIB_all_fobs >= GRLIB_maximum_fobs ) exitWith {
     hint format [ localize "STR_HINT_FOBS_EXCEEDED", GRLIB_maximum_fobs ];
 };
 
-_minfobdist = 1000;
-_minsectordist = 300;
+_minfobdist = 1;
+_minsectordist = 1;
 _distfob = 1;
 _clearedtobuildfob = true;
 _distsector = 1;
