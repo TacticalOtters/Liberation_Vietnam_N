@@ -21,11 +21,11 @@
 class Header {
     gameType = "CTI";
     minPlayers = 1;
-    maxPlayers = 100;
+    maxPlayers = 50;
 };
 
 // Name of Mission author(s) and contributors. Obviously you can only add and not (!) remove someone.
-author = "[GREUH] Zbug & McKeewa, KP Liberation Dev Team";
+author = "[GREUH] Zbug & McKeewa, KP Liberation Dev Team, TacOtters";
 
 
 /*
@@ -37,7 +37,7 @@ briefingName = $STR_MISSION_TITLE;
 
 // Path to image which will be displayed when the mission is highlighted on the mission selection screen.
 // Image should be .paa format and in 2:1 aspect ratio – ideally 1024x512 (Arma 3).
-overviewPicture = "res\KarmaLoading.paa";
+overviewPicture = "res\liberationLoading25.paa";
 
 // Text to be displayed below the overviewPicture on the mission selection screen
 overviewText = "Tale From North Vietnam";
@@ -53,10 +53,10 @@ onLoadName = $STR_MISSION_TITLE;
 
 // You can define a picture to be shown while the mission is loaded.
 // The path is relative to the mission folder.
-loadScreen = "res\KarmaLoading.paa";
+loadScreen = "res\liberationLoading25.paa";
 
 // Displays a message while the mission is loading below the loadScreen picture.
-onLoadMission = "karmakut.com";
+onLoadMission = "All gave some, some gave ALL.";
 
 
 /*
